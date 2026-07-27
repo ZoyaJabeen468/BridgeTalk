@@ -14,11 +14,9 @@
 
 # 2. Live deployed URL
 
-**Live app:** Add your Vercel URL here after deploy (example shape: https://bridgetalk.vercel.app)
+**Live app:** [https://bridgetalk-two.vercel.app](https://bridgetalk-two.vercel.app)
 
-Replace the placeholder with your real public URL once Vercel deploy succeeds. Graders should open this link without logging into GitHub.
-
-**Public GitHub repository:** Add your public repo URL here.
+**Public GitHub repository:** [https://github.com/ZoyaJabeen468/BridgeTalk](https://github.com/ZoyaJabeen468/BridgeTalk)
 
 # 3. Features list
 
@@ -107,7 +105,7 @@ This prompt design is original to BridgeTalk’s product goal: respectful prepar
 - **Primary AI:** Google Gemini (`GEMINI_MODEL`, default `gemini-flash-latest`, with model fallbacks)
 - **Optional AI fallback:** OpenAI (`gpt-4o-mini` by default)
 - **Storage:** Browser localStorage / sessionStorage (packs, skills, local auth)
-- **Hosting:** Vercel (live URL to be added after deploy)
+- **Hosting:** Vercel ([https://bridgetalk-two.vercel.app](https://bridgetalk-two.vercel.app))
 - **Editor / build:** Cursor, Node.js, npm
 
 No API keys are committed. Keys live in `.env.local` locally and in Vercel Environment Variables in production.
