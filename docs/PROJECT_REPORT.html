@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BridgeTalk Project Report</title>
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 12pt;
+        line-height: 1.45;
+        color: #111;
+        max-width: 820px;
+        margin: 32px auto;
+        padding: 0 24px 48px;
+      }
+      h1 {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 16pt;
+        font-weight: bold;
+        margin: 1.4em 0 0.5em;
+      }
+      h2 {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 14pt;
+        font-weight: bold;
+        margin: 1.2em 0 0.4em;
+      }
+      h3,
+      p,
+      li,
+      td,
+      th,
+      a {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 12pt;
+      }
+      h3 {
+        font-weight: bold;
+        margin: 1em 0 0.35em;
+      }
+      p,
+      li {
+        margin: 0.35em 0;
+      }
+      ul {
+        margin: 0.4em 0 0.8em 1.3em;
+        padding: 0;
+      }
+      .title-block h1 {
+        margin-top: 0;
+      }
+      .muted {
+        color: #333;
+      }
+      img {
+        max-width: 100%;
+        border: 1px solid #ccc;
+        margin: 8px 0 16px;
+      }
+      .note {
+        border-left: 3px solid #355e3b;
+        padding-left: 12px;
+        margin: 12px 0;
+      }
+      @media print {
+        body {
+          margin: 0;
+          max-width: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title-block">
+      <h1>BridgeTalk</h1>
+      <p><strong>Prepare hard conversations calmly and clearly.</strong></p>
+      <p class="muted">
+        Final project report. Deadline: Monday, 27 July 2026, 11:59 PM (PKT).
+      </p>
+    </div>
+
+    <h1>1. App name, problem, and who it serves</h1>
+    <h2>App name</h2>
+    <p>BridgeTalk</p>
+
+    <h2>What it does</h2>
+    <p>
+      BridgeTalk helps young adults prepare respectful, bilingual (English and
+      Urdu) conversations about important life decisions. You describe who you
+      will talk to and what you need to explain. The app returns a structured
+      conversation pack: a calm opener, clear wording, the other person’s likely
+      worries, safer phrasing, and a practical next step.
+    </p>
+
+    <h2>Real problem it solves</h2>
+    <p>
+      In many families (especially South Asian and Pakistani households), hard
+      talks about freelancing, gap years, changing degrees, moving cities, or
+      personal timelines become emotional quickly. People often know what they
+      want, but freeze on how to say it with respect. BridgeTalk is not a
+      “convince your parents” tool. It is a communication coach that improves
+      clarity and empathy. It never promises agreement.
+    </p>
+
+    <h2>Who it is for</h2>
+    <p>
+      Students and young adults preparing talks with parents, siblings,
+      relatives, partners, mentors, or teachers.
+    </p>
+
+    <h1>2. Live deployed URL</h1>
+    <p>
+      <strong>Live app:</strong> Add your Vercel URL here after deploy (example
+      shape: https://bridgetalk.vercel.app)
+    </p>
+    <p>
+      <strong>Public GitHub repository:</strong> Add your public repo URL here.
+    </p>
+    <div class="note">
+      <p>
+        Replace placeholders after deploy. Graders should open the live link
+        without logging into GitHub. Confirm the repository is public in an
+        incognito window.
+      </p>
+    </div>
+
+    <h1>3. Features list</h1>
+    <h2>Product flow</h2>
+    <ul>
+      <li>Marketing landing page with brand story, audience guidance, how it works, and sample preview</li>
+      <li>Sign up and sign in (local browser profile for this device)</li>
+      <li>User profile page (name, bio, preferred tone, skills snapshot, sign out)</li>
+      <li>Auth gate: Prepare Conversation and Skills require sign in or sign up first</li>
+      <li>Conversation intake form (audience, situation, decision summary, concerns, tone, listener style, cultural context)</li>
+      <li>Sample mode and audience deep links</li>
+      <li>AI conversation pack generation via API</li>
+      <li>Result page with structured pack sections and copy tools</li>
+      <li>About page (why BridgeTalk exists and core principles)</li>
+    </ul>
+
+    <h2>Conversation pack contents</h2>
+    <ul>
+      <li>Calm opener</li>
+      <li>English explanation</li>
+      <li>Urdu spoken draft in proper Urdu script (not Roman Urdu)</li>
+      <li>Their perspective (worries to address)</li>
+      <li>Likely questions and calm answers</li>
+      <li>Practical plan</li>
+      <li>Risky phrases with safer alternatives</li>
+      <li>Prep tips</li>
+      <li>Soft scores for respect, clarity, practicality, and conflict risk</li>
+    </ul>
+
+    <h2>Skills (communication practice)</h2>
+    <ul>
+      <li>Daily practice strip (rotates by day; personalizes from your last pack when available)</li>
+      <li>Self check (Calm, Clear, Respectful) before marking the day done</li>
+      <li>Soft rewrite tips for tense wording</li>
+      <li>Private streak with one grace day</li>
+      <li>Short lessons and practice drills (library + from your pack)</li>
+      <li>Post talk reflection</li>
+      <li>Private skill scores and pattern hints (local only)</li>
+    </ul>
+
+    <h2>Extra product details</h2>
+    <ul>
+      <li>Copy section / copy all / WhatsApp friendly summary</li>
+      <li>Demo pack fallback if AI keys are missing (app still works end to end)</li>
+      <li>Responsive, professional UI with a custom design system</li>
+    </ul>
+
+    <h1>4. AI feature</h1>
+    <h2>What the AI does</h2>
+    <p>
+      The core AI feature is conversation pack generation. The user submits
+      situation details, the API calls the generation pipeline, the model returns
+      JSON only, Zod validates the shape, Roman Urdu is converted to proper Urdu
+      script when needed, and the pack is shown on the result page.
+    </p>
+
+    <h2>Provider order</h2>
+    <ol>
+      <li>Google Gemini (primary)</li>
+      <li>OpenAI (optional fallback)</li>
+      <li>Built in demo pack (always available)</li>
+    </ol>
+
+    <h2>System prompt (authored for this project)</h2>
+    <p>Stored in <code>src/lib/prompts/system.ts</code>. Core instructions:</p>
+    <ul>
+      <li>Act as a calm communication coach for young adults.</li>
+      <li>Help both sides understand each other.</li>
+      <li>Improve communication. Never promise agreement.</li>
+      <li>Never make the other person the villain.</li>
+      <li>Never coach manipulation, guilt, or “winning”.</li>
+      <li>Stay culturally aware without stereotyping.</li>
+      <li>Use simple spoken wording.</li>
+      <li>English: natural and respectful.</li>
+      <li>Urdu: proper Arabic / Nastaliq script only. Never Roman Urdu.</li>
+      <li>Fit wording to audience.</li>
+      <li>Return valid JSON only for the conversation pack fields.</li>
+    </ul>
+
+    <h1>5. Tools, services, and AI models used</h1>
+    <ul>
+      <li><strong>Framework:</strong> Next.js 16 (App Router), React 19, TypeScript</li>
+      <li><strong>Styling:</strong> Tailwind CSS v4, custom design tokens, Framer Motion</li>
+      <li><strong>UI:</strong> Radix UI primitives and custom component layer</li>
+      <li><strong>Validation:</strong> Zod</li>
+      <li><strong>Primary AI:</strong> Google Gemini (default gemini-flash-latest, with fallbacks)</li>
+      <li><strong>Optional AI fallback:</strong> OpenAI (gpt-4o-mini by default)</li>
+      <li><strong>Storage:</strong> Browser localStorage / sessionStorage</li>
+      <li><strong>Hosting:</strong> Vercel</li>
+      <li><strong>Editor / build:</strong> Cursor, Node.js, npm</li>
+    </ul>
+    <p>
+      No API keys are committed. Keys live in environment variables only.
+    </p>
+
+    <h1>6. Screenshots of the app in action</h1>
+    <h2>Screenshot 1: Landing page</h2>
+    <p>
+      <img src="screenshots/01-landing.png" alt="BridgeTalk landing page" />
+    </p>
+    <h2>Screenshot 2: Prepare conversation form</h2>
+    <p>
+      <img src="screenshots/02-generate.png" alt="Prepare conversation form" />
+    </p>
+    <h2>Screenshot 3: Generated conversation pack</h2>
+    <p>
+      <img src="screenshots/03-result.png" alt="Conversation pack result" />
+    </p>
+    <h2>Screenshot 4: Skills daily practice</h2>
+    <p>
+      <img src="screenshots/04-skills.png" alt="Skills page" />
+    </p>
+    <p class="muted">
+      Place PNG files with these names in docs/screenshots/ before final
+      submission.
+    </p>
+
+    <h1>7. How to run the project</h1>
+    <h2>Requirements</h2>
+    <ul>
+      <li>Node.js 20+ recommended</li>
+      <li>npm</li>
+      <li>Optional Google Gemini API key for live AI generation</li>
+    </ul>
+
+    <h2>Local setup</h2>
+    <ol>
+      <li>Clone the public repository.</li>
+      <li>Run <code>npm install</code>.</li>
+      <li>Copy <code>.env.example</code> to <code>.env.local</code>.</li>
+      <li>Add <code>GEMINI_API_KEY</code> (optional but recommended).</li>
+      <li>Run <code>npm run dev</code>.</li>
+      <li>Open http://localhost:3000</li>
+    </ol>
+
+    <h2>Notes for graders</h2>
+    <ol>
+      <li>Create an account (local to the browser), then open Prepare Conversation or Skills.</li>
+      <li>If no AI key is configured, generation still works using the demo pack.</li>
+      <li>With a Gemini key on Vercel, the live site generates real packs.</li>
+      <li>Confirm the repository is public in an incognito window.</li>
+      <li>Never commit <code>.env.local</code>.</li>
+    </ol>
+
+    <h1>Privacy and academic honesty note</h1>
+    <p>
+      BridgeTalk was designed and built as an original student project around a
+      real communication problem. Conversation packs and skills data stay in the
+      browser. Local sign up or sign in is device based for product flow.
+      Production AI keys must stay in host environment variables only.
+    </p>
+  </body>
+</html>
