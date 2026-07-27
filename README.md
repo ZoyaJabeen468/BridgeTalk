@@ -130,28 +130,32 @@ No API keys are committed to the repository. Keys live in `.env.local` locally a
 
 
 ### Communication / audience selection
-![Communication page with audience cards](docs/screenshots/02-communication.png)
+<img width="1919" height="971" alt="image" src="https://github.com/user-attachments/assets/4a6e0341-8dd3-47b3-9eae-26c31ff8e639" />
+
 
 ### Sign in
-![Sign in screen](docs/screenshots/03-signin.png)
+<img width="1918" height="960" alt="image" src="https://github.com/user-attachments/assets/ab02e6c5-aaf8-4db2-9127-75ff90aeba0a" />
+
 
 ### Create account
-![Create account screen](docs/screenshots/04-signup.png)
+<img width="1912" height="972" alt="image" src="https://github.com/user-attachments/assets/52ccfa66-e9b1-485f-8a51-7fc1deb99967" />
+
 
 ### User profile
-![Profile page with streak, lessons, and preferred tone](docs/screenshots/05-profile.png)
+<img width="1038" height="855" alt="image" src="https://github.com/user-attachments/assets/6b293023-4701-48bf-993a-948687beb275" />
+
 
 ### Prepare a conversation — intake form
-![Conversation intake form](docs/screenshots/06-generate-form.png)
+<img width="736" height="864" alt="image" src="https://github.com/user-attachments/assets/039a93de-a2aa-48fc-8591-9ae48719d387" />
 
-### Generating the pack
-![AI generating the conversation pack](docs/screenshots/07-generating.png)
 
 ### Generated conversation pack (English + Urdu)
-![Conversation pack result with calm opener, English/Urdu explanation, and practical plan](docs/screenshots/08-result.png)
+<img width="542" height="782" alt="image" src="https://github.com/user-attachments/assets/b3137cea-aa3a-43e8-a30d-99d21add3ae2" />
+
 
 ### Skills — daily practice
-![Skills page with daily practice, self-check, and private skill scores](docs/screenshots/09-skills.png)
+<img width="552" height="850" alt="image" src="https://github.com/user-attachments/assets/e6f72ea2-218e-4d2d-b9a9-3f0641dcc153" />
+
 
 ---
 
