@@ -125,7 +125,9 @@ No API keys are committed to the repository. Keys live in `.env.local` locally a
 ## 6. Screenshots
 
 ### Landing page
-![BridgeTalk landing page](docs/screenshots/01-landing.png)
+
+<img width="624" height="312" alt="image" src="https://github.com/user-attachments/assets/52f6278f-a484-426b-9e1c-eb82af0481b1" />
+
 
 ### Communication / audience selection
 ![Communication page with audience cards](docs/screenshots/02-communication.png)
